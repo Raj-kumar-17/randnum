@@ -8,10 +8,11 @@ export default function App() {
 
 
   const handleRandom=()=>{
-    let rand=setrandom(Math.floor((Math.random()*maxval)+minval));
+    let rand=Math.floor((Math.random()*maxval)+minval);
     while(rand>maxval){
-      rand=setrandom(Math.floor((Math.random()*maxval)+minval));
+      rand=Math.floor((Math.random()*maxval)+minval);
     }
+    setrandom(rand);
   };
 return (
     
